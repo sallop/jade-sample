@@ -1,0 +1,18 @@
+mixin article(link, description)
+        td: a(href=link)= description
+
+body
+    table
+        tr
+            +article("asdf.pdf", "2002年（平成14年）")
+            +article("asdf.pdf", "2002年（平成14年）")
+        tr
+            +article("pdf/pdf4.pdf", "2004()")
+            +article("pdf/pdf6.pdf", "2004()")
+        tr
+            +article("pdf/pdf4.pdf", "2004()")
+            +article("pdf/pdf6.pdf", "2004()")
+
+
+
+

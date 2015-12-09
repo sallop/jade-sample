@@ -1,0 +1,63 @@
+doctype html
+
+mixin article(link, description)
+        td: a(href=link)= description
+
+html
+    head
+        meta(charset="utf8")
+        title= ペンテコステ
+    body
+        div(align="center")
+            div(class="title")
+                img(src="jpg/pentetitle.jpg",alt="ペンテコステ・タイトル")
+            p(class="setsumei")
+                毎月1日に定期発行する谷山教会の情報誌です。
+                br
+            table(border="1", cellpadding="9", cellspacing="3")
+                tr
+                    +article("jpg/under-construction.jpg","2002年（平成14年）4〜6月　No.152〜154)")
+                    +article("jpg/under-construction.jpg","2002年（平成14年）4〜6月　No.152〜154)")
+                tr
+                    +article("jpg/under-construction.jpg","2002年（平成14年）4〜6月　No.152〜154)")
+                    +article("jpg/under-construction.jpg","2002年（平成14年）4〜6月　No.152〜154)")
+                tr
+                    +article("jpg/under-construction.jpg","2002年（平成14年）4〜6月　No.152〜154)")
+                    +article("jpg/under-construction.jpg","2002年（平成14年）4〜6月　No.152〜154)")
+                tr
+                    +article("jpg/under-construction.jpg","2002年(平成14年)4月〜6月 No.152〜154")
+                    +article("jpg/under-construction.jpg","2002年(平成14年)7月〜12月 No.155〜160")
+                tr
+                    +article("jpg/under-construction.jpg","2003年(平成15年)1月〜6月 No.161〜166")
+                    +article("pdf/ppdf4.pdf","2003年(平成15年)7月〜12月 No.167〜172")
+                tr
+                    +article("pdf/ppdf5.pdf","2004年(平成16年)1月〜6月 No.173〜178")
+                    +article("pdf/ppdf6.pdf","2004年(平成16年)7月〜12月 No.179〜184")
+                tr
+                    +article("pdf/ppdf7.pdf","2005年(平成17年)1月〜6月 No.185〜190")
+                    +article("pdf/ppdf8.pdf","2005年(平成17年)7月〜12月 No.191〜196")
+                tr
+                    +article("pdf/ppdf9.pdf","2006年(平成18年)1月〜6月 No.197〜202")
+                    +article("pdf/ppdf10.pdf","2006年(平成18年)7月〜12月 No.203〜207")
+                tr
+                    +article("pdf/ppdf11.pdf","2007年(平成19年)1月〜6月 No.208〜213")
+                    +article("pdf/ppdf12.pdf","2007年(平成19年)7月〜12月 No.214〜219")
+                tr
+                    +article("pdf/ppdf13.pdf","2008年(平成20年)1月〜6月 No.220〜225")
+                    +article("pdf/ppdf14.pdf","2008年(平成20年)7月〜12月 No.226〜231")
+                tr
+                    +article("pdf/ppdf15.pdf","2009年(平成21年)1月〜6月 No.232〜237")
+                    +article("pdf/ppdf16.pdf","2009年(平成21年)7月〜12月 No.238〜243")
+                tr
+                    +article("pdf/ppdf17.pdf","2010年(平成22年)1月〜6月 No.244〜249")
+                    +article("pdf/ppdf18.pdf","2010年(平成22年)7月〜12月 No.250〜255")
+                tr
+                    +article("pdf/ppdf19.pdf","2011年(平成23年)1月〜2月 No.256〜257")
+                    +article("","")
+
+
+    footer(align="center")
+        a(href="index.html") 聖アルフォンソ・ファミリー
+
+
+
