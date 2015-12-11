@@ -6,21 +6,25 @@ html(lang="en")
     script(type='text/javascript').
 
   body
-    img(src="jpg/church.jpg", class="photo001", width="394", height="341", alt="谷山カトリック教会")
-    div(text-align="center")
-      h2 谷山カトリック教会のホームページ
-      h3 (Taniyama Cathoric Church, Kagoshima
-      p(text-align="center")
-        span(class="name").
-          聖アルフォンソファミリーへようこそ
-        br
-        開かれた教会、私たちの
-        br
-        span(class="Taniyama").
-          谷山カトリック教会を紹介します
-        br
-        Our parish father can talk German, English, Spanish, Italian and French.
-    div(class="dash-board")
+    div(align="center")
+      table
+        tr
+          td: img(src="jpg/church.jpg", class="photo001", width="394", height="341", alt="谷山カトリック教会")
+          td
+            h2 谷山カトリック教会のホームページ
+            h3 (Taniyama Cathoric Church, Kagoshima
+            p(text-align="center")
+              span(class="name").
+                聖アルフォンソファミリーへようこそ
+              br
+              開かれた教会、私たちの
+              br
+              span(class="Taniyama").
+                谷山カトリック教会を紹介します
+              br
+              Our parish father can talk German, English, Spanish, Italian and French.
+
+    div(class="dash-board", align="center")
         table(border="1", cellpadding="7", cellspacing="0", width="60%")
           tr
             td: a(href="profile.html") プロフィール
@@ -47,9 +51,3 @@ html(lang="en")
             br
             E-Mail
             a(href="mailto:taniyama-cc@tycc.sakura.ne.jp" class="mail") taniyama-cc@tycc.sakura.ne.jp
-
-
-
-
-
-
