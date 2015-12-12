@@ -1,0 +1,64 @@
+@base-color: #ffffee; /* background color */
+//@dominant-color: #f7ffcc; /* frequently appear */
+@dominant-color: #99ee66; /* frequently appear */
+
+@assorted-color: #666666;
+//@accent-color: crimson;
+@accent-color: #33cc66;
+
+body {
+  width: 95%;
+  color: @assorted-color;
+  background-color: @base-color;
+  background-image: url(../jpg/back007.jpg);
+  background-repeat: repeat-x;
+  padding-top: 50px;
+}
+
+img {
+  margin-top: 10px;  
+  margin-bottom: 10px;  
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+p {
+  &.setumei {
+    width: 71%;
+    text-align: left;
+    text-indent: 1em;
+    line-height: 1.5;
+  }
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+em {
+  font-size: 0.7em;
+}
+
+table {
+  width: 70%;
+}
+
+caption {
+  caption-side: bottom;
+}
+
+thead, th {
+  background-color: @dominant-color;
+}
+
+hr {
+  height: 4px;
+  background-color: @accent-color;
+  width: 90%;
+  margin-top: 10px;
+}
+
+a {
+  &:link { color: #0066ff; }
+  &:visited { color: #0066ff; }
+  &:hover { color: #ff6699; }
+  &:active { color: #008000; }
+}
