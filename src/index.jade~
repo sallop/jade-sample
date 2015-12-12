@@ -12,11 +12,11 @@ html(lang="en")
       table
         tr
           td: img(src="jpg/church.jpg", class="photo001", width="394", height="341", alt="谷山カトリック教会")
-          td(align="center")
+          td
             h1 谷山カトリック教会のホームページ
-            h2 聖アルフォンソ・ファミリー
+            h2(align="center") 聖アルフォンソ・ファミリー
             h3 (Taniyama Cathoric Church, Kagoshima
-            p(align="center")
+            p(text-align="center")
               span(class="name").
                 聖アルフォンソファミリーへようこそ
               br
@@ -30,20 +30,20 @@ html(lang="en")
     div(class="dash-board", align="center")
         table(border="1", cellpadding="7", cellspacing="0", width="60%")
           tr
-            td: a(href="about-us.html") カトリック谷山教会について
+            td: a(href="profile.html") プロフィール
             td: a(href="mass.html") ミサと祈りの集い
             td: a(href="bible.html") キリスト教入門と聖書研究
           tr
-            td: a(href="profile.html") レデンプトール会について 
             td: a(href="school.html") 教会学校
             td: a(href="legiomariae.html") レジオマリエ
+            td: a(href="pentecoste.html") ペンテコステ
           tr
             td: a(href="choir.html") 聖アルフォンソ合唱団 
             td: a(href="handbell.html") リンガーズアポロン
             td: a(href="box.html") フリートークボックス
           tr
-            td: a(href="pentecoste.html") ペンテコステ
             td: a(href="link.html") リンク集
+            td: &ensp;
             td: &ensp;
 
         //p(class="counter")
@@ -54,5 +54,5 @@ html(lang="en")
         div(class="copy")
             Copyright(C)聖アルフォンソ・ファミリー
             br
-            text E-Mail:&ensp;
+            E-Mail
             a(href="mailto:taniyama-cc@tycc.sakura.ne.jp" class="mail") taniyama-cc@tycc.sakura.ne.jp

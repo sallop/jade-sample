@@ -1,0 +1,12 @@
+/* Mixin */
+/* Implementation */
+#somediv {
+  -webkit-border-radious: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+#defaultdiv {
+  -webkit-border-radious: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

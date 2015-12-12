@@ -1,0 +1,27 @@
+a:link {
+  color: #0066ff;
+}
+a:visited {
+  color: #00aaff;
+}
+a:hover {
+  color: #ff6699;
+}
+a:active {
+  color: #008000;
+}
+a.mail {
+  text-decoration: none;
+}
+a.mail:link {
+  color: #ffffff;
+}
+a.mail:visited {
+  color: #ffffff;
+}
+a.mail:hover {
+  color: #ffff00;
+}
+a.mail:active {
+  color: #008000;
+}

@@ -1,0 +1,55 @@
+body {
+  background-image: url('../jpg/back004.jpg');
+}
+p.introduction {
+  width: 100%;
+  background-color: #EEFF95;
+  text-align: left;
+  text-indent: 1em;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+strong {
+  color: red;
+}
+img.organ {
+  float: left;
+  margin-right: 20px;
+}
+h1 {
+  color: green;
+  font-size: 2.5em;
+}
+table.layout {
+  width: 70%;
+}
+table.diary {
+  width: 70%;
+  background-color: #EEFF95;
+}
+th {
+  width: 140px;
+  text-align: center;
+  background-color: #EEFF95;
+}
+tr,
+td {
+  background-color: #f7ffcc;
+}
+caption {
+  color: crimson;
+  font-weight: bold;
+}
+a:link {
+  color: #0066ff;
+}
+a:visited {
+  color: #0066ff;
+}
+a:hover {
+  color: #ff6699;
+}
+a:active {
+  color: #008000;
+}

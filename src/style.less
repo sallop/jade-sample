@@ -1,0 +1,124 @@
+@base-color: #ffffee; /* background color */
+@dominant-color: #f7ffcc; /* frequently appear */
+@assorted-color: #66666;
+@accent-color: crimson;
+
+@h1-color: #336633;
+@h3-color: #99cc00;
+
+.box-border(@top-left, @bottom-right, @width){
+  border-top-color: @top-left;
+  border-right-color: @bottom-right;
+  border-bottom-color: @bottom-right;
+  border-left-color: @top-left;
+  border-width: @width;
+  border-style: solid;
+}
+
+body {
+    color: @dominant-color;
+    background-color: @base-color;
+    text-align: center;
+}
+
+img.photo001 {
+  float: left;
+}
+
+h2 {
+  color: black;
+  margin-top: 20px;
+}
+
+h3 {
+    color: @h3-color;
+}
+
+h1 {
+    font-size: 40px;
+    /*
+    font-family:'MS Pゴシック', Osaka;
+    font-family: sans-serif;
+    font-family: "IPA mona Mincho";
+    font-family: "IPA mona Gothic";
+    font-family: "kochi Mincho";
+    */
+    font-family: "MS PGothic", "Osaka", Arial, sans-serif;
+    color: @h1-color;
+}
+
+span {
+  &.Taniyama {
+    font-weight: bold;
+    color: @assorted-color;
+  }
+  &.name {
+    font-weight: bold;
+  }
+}
+
+p {
+  color: #666666;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  padding: 4px;
+  line-height: 150%;
+  background-color: @dominant-color;
+   .box-border(#ffff99, DarkOliveGreen, 7px);
+  /*
+  border-style: solid;
+  border-width: 7px;
+  border-top-color: #ffff99;
+  border-right-color: green;
+  border-bottom-color: green;
+  border-left-color: #ffff99;
+  */
+}
+
+.counter {
+  border-style: solid;
+  border-width: 3px;
+}
+
+table {
+  empty-cells: show;
+}
+
+
+strong {
+  font-weight: bold;
+  color: crimson;
+  background-color: #ffff99;
+}
+
+div.shintorenraku {
+  clear: left;
+}
+
+div.copy {
+  background-color: #33cc66;
+  color: white;
+  font-size: smaller;
+  padding: 2px;
+  margin-top: 20px;
+}
+
+a {
+  &:link{ color: #0066ff; }
+  &:visited { color: #00aaff; }
+  &:hover { color: #ff6699; }
+  &:active { color: #008000;}
+}
+
+a.mail {
+  text-decoration: none;
+  &:link {color: #ffffff}
+  &:visited {color: #ffffff}
+  &:hover {color: #ffff00}
+  &:active {color: #008000}
+}
+
+div.dash-board {
+  background-color: @dominant-color;
+}

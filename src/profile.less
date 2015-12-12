@@ -1,0 +1,77 @@
+//@base-color: #ffffee; /* background color */
+//@dominant-color: #f7ffcc; /* frequently appear */
+//@assorted-color: #66666;
+//@accent-color: crimson;
+
+@base-color: #ffffee; /* background color */
+@dominant-color: #f7ffcc; /* frequently appear */
+@assorted-color: #666666;
+//@assorted-color: #333333;
+//@accent-color: crimson;
+@accent-color: green;
+
+
+@h1-color: #336633;
+@h3-color: #99cc00;
+
+.box-border(@top-left, @bottom-right, @width){
+  border-top-color: @top-left;
+  border-right-color: @bottom-right;
+  border-bottom-color: @bottom-right;
+  border-left-color: @top-left;
+  border-width: @width;
+  border-style: solid;
+}
+
+body {
+  //color: #333333;
+  color: @assorted-color;
+  background-color: @base-color;
+  background-image: url('../jpg/back001.jpg');
+}
+
+h1 {
+    color: @accent-color;
+}
+
+img.photo {
+  //float: left;
+  float: center;
+  margin-top: 35px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+strong {
+  color: @accent-color;
+  font-size: 1.1em;
+}
+
+p {
+  width: 60%;
+  text-align: left;
+  text-indent: 1em;
+  line-height: 1.5em;
+
+  &.kantou {
+    width: 550px;
+    text-align: left;
+    text-indent: 1em;
+  }
+}
+
+a {
+  &:link {
+    color: #0066ff;
+  }
+  &:visited {
+    color: #0066ff;
+  }
+  &:hover {
+    color: #ff6699;
+  }
+  &:active {
+    color: #008000;
+  }
+}

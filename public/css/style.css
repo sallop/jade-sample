@@ -1,0 +1,111 @@
+/* background color */
+/* frequently appear */
+body {
+  color: #f7ffcc;
+  background-color: #ffffee;
+  text-align: center;
+}
+img.photo001 {
+  float: left;
+}
+h2 {
+  color: black;
+  margin-top: 20px;
+}
+h3 {
+  color: #99cc00;
+}
+h1 {
+  font-size: 40px;
+  /*
+    font-family:'MS Pゴシック', Osaka;
+    font-family: sans-serif;
+    font-family: "IPA mona Mincho";
+    font-family: "IPA mona Gothic";
+    font-family: "kochi Mincho";
+    */
+  font-family: "MS PGothic", "Osaka", Arial, sans-serif;
+  color: #336633;
+}
+span.Taniyama {
+  font-weight: bold;
+  color: #66666 66;
+}
+span.name {
+  font-weight: bold;
+}
+p {
+  color: #666666;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  padding: 4px;
+  line-height: 150%;
+  background-color: #f7ffcc;
+  border-top-color: #ffff99;
+  border-right-color: DarkOliveGreen;
+  border-bottom-color: DarkOliveGreen;
+  border-left-color: #ffff99;
+  border-width: 7px;
+  border-style: solid;
+  /*
+  border-style: solid;
+  border-width: 7px;
+  border-top-color: #ffff99;
+  border-right-color: green;
+  border-bottom-color: green;
+  border-left-color: #ffff99;
+  */
+}
+.counter {
+  border-style: solid;
+  border-width: 3px;
+}
+table {
+  empty-cells: show;
+}
+strong {
+  font-weight: bold;
+  color: crimson;
+  background-color: #ffff99;
+}
+div.shintorenraku {
+  clear: left;
+}
+div.copy {
+  background-color: #33cc66;
+  color: white;
+  font-size: smaller;
+  padding: 2px;
+  margin-top: 20px;
+}
+a:link {
+  color: #0066ff;
+}
+a:visited {
+  color: #00aaff;
+}
+a:hover {
+  color: #ff6699;
+}
+a:active {
+  color: #008000;
+}
+a.mail {
+  text-decoration: none;
+}
+a.mail:link {
+  color: #ffffff;
+}
+a.mail:visited {
+  color: #ffffff;
+}
+a.mail:hover {
+  color: #ffff00;
+}
+a.mail:active {
+  color: #008000;
+}
+div.dash-board {
+  background-color: #f7ffcc;
+}

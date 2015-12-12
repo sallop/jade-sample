@@ -1,0 +1,44 @@
+/* background color */
+/* frequently appear */
+body {
+  color: #666666;
+  background-color: #ffffee;
+  background-image: url('../jpg/back001.jpg');
+}
+h1 {
+  color: green;
+}
+img.photo {
+  float: center;
+  margin-top: 35px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+strong {
+  color: green;
+  font-size: 1.1em;
+}
+p {
+  width: 60%;
+  text-align: left;
+  text-indent: 1em;
+  line-height: 1.5em;
+}
+p.kantou {
+  width: 550px;
+  text-align: left;
+  text-indent: 1em;
+}
+a:link {
+  color: #0066ff;
+}
+a:visited {
+  color: #0066ff;
+}
+a:hover {
+  color: #ff6699;
+}
+a:active {
+  color: #008000;
+}

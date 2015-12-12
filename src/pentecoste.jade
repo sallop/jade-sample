@@ -6,15 +6,26 @@ mixin article(link, description)
 html
     head
         meta(charset="utf8")
+        link(rel="stylesheet", href="css/pentecoste.css")
         title= ペンテコステ
     body
         div(align="center")
             div(class="title")
                 img(src="jpg/pentetitle.jpg",alt="ペンテコステ・タイトル")
-            p(class="setsumei")
-                毎月1日に定期発行する谷山教会の情報誌です。
-                br
-            table(border="1", cellpadding="9", cellspacing="3")
+            //p(class="setsumei")
+            div(class="setsumei")
+              ul(list-style-type="circle")
+                li 毎月1日に定期発行する谷山教会の情報誌です。
+                li 最新号はNo.257（2011年2月1日現在)
+                li 構成はA4判4ページのカラー印刷で、発行部数は250。
+                li 第1面は主任司祭の「巻頭言」。
+                li 2面3面は「今月の聖人から」「Taniyama NEWS」「カトリック教会の歴史」等の読み物中心。
+                li 第4面は発行月の「祝日と教会行事の予定表」です。
+                li 小教区向けの予定の変更や追加は、その都度トップページで知らせます。
+                li バックナンバーは6ヶ月分ずつまとめてあります。ご覧になるセルをクリックしてお読み下さい。
+                li 一部工事中のところがあります。出来るだけ早く完成させて、ご覧に入れたいと思います。
+
+              table(border="1", cellpadding="9", cellspacing="3")
                 tr
                     +article("jpg/under-construction.jpg","2002年（平成14年）4〜6月　No.152〜154)")
                     +article("jpg/under-construction.jpg","2002年（平成14年）4〜6月　No.152〜154)")

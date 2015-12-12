@@ -1,0 +1,82 @@
+//@base-color: #ffffee;
+//@dominant-color: #f7ffcc;
+//@dominant-color: #90ee90;
+//@dominant-color: #E6FF66;
+@base-color: #f7ffcc;
+@dominant-color: #EEFF95;
+@assorted-color: #666666;
+@accent-color: #crimson;
+
+
+body {
+  background-image: url('../jpg/back004.jpg');
+  //background-color: @base-color;
+}
+
+p.introduction {
+  width: 100%;
+  background-color: @dominant-color;
+  text-align: left;
+  text-indent: 1em;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+strong {
+  color: red;
+}
+
+img.organ {
+  float: left;
+  margin-right: 20px;
+}
+
+h1 {
+  color: green;
+  font-size: 2.5em;
+}
+
+table.layout {
+  width: 70%;
+  //background-image: url('../jpg/back004.jpg');
+  //background-color: @base-color;
+}
+
+table.diary {
+  width: 70%;
+  background-color: @dominant-color;
+}
+
+th {
+    width: 140px;
+    text-align: center;
+    background-color: @dominant-color;
+}
+
+tr, td {
+  //width: 140px;
+  //background-color: #666666;
+  //background-color: @dominant-color;
+  background-color: @base-color;
+}
+
+caption {
+  color: crimson; 
+  font-weight: bold;
+}
+
+a {
+  &:link {
+    color: #0066ff;
+  }
+  &:visited {
+    color: #0066ff;
+  }
+  &:hover  {
+    color: #ff6699;
+  }
+  &:active {
+    color: #008000;
+  }
+}
