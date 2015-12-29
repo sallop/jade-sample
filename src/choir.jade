@@ -1,0 +1,78 @@
+mixin sound-info(date, title, image, sound, ...items)
+  tr
+    th
+      ul(style="list-style-type: none;")
+        li= date + " 収録"
+        li= title
+      +tracks(...items)
+      a(href=sound, class="botan") 試聴ボタン
+    td: img(src=image, width=250, height=250)
+    td: a(href="box.html") CD希望の方は御連絡ください
+
+mixin tracks(...items)
+  ul(style="list-style-type: none;text-align: left;")
+    each item in items
+      li= item
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title: 聖アルフォンソ合唱団
+    link(rel="stylesheet",type="text/css",href="css/choir.css")
+  body
+    div(align="center")
+     img(src="jpg/st-alfonso.jpg",alt="アルフォンソ合唱団")
+     table
+      tr
+        td: img(class="chamberor",src="jpg/chamberor.jpg",alt="聖アルフォンソ室内管弦楽団")
+        td
+          p
+          |西欧のキリスト教の教会には、日常の典礼に奉仕する聖歌隊の伝統があります。
+          |谷山カトリック教会では、平成16年に「聖アルフォンソ合唱団」が結成され、
+          |クリスマスや復活祭等の大きな祝日に奉仕する合唱団として活動しています。
+          |モーツアルトやシューベルト等の名曲を出来るだけオリジナルな形で演奏するために、
+          |その都度ソリストを迎え「聖アルフォンソ室内管弦楽団」を編成して演奏しています。
+          |メンバーは当初、谷山カトリック教会の歌の好きな人達が集まって歌っていましたが、
+          |これを聞きつけてあちこちの教会から集まるようになり、
+          |今では一般の市民の方々も一緒に歌うようになりました。
+          |練習は、<span>毎日曜日午前10：00から11：00</span>まで、場所は教会聖堂。
+          |どうぞ合唱の好きな方の参加をお待ちしています。
+
+  div(align="center")
+    table(border="1" frame="hsides" rules="rows" width="80%")
+      caption
+        これまでに作成されたＣＤを、以下にご紹介します
+        br
+        試聴ボタンを押すと、赤い曲の始めの部分を聴くことが出来ます
+
+      +sound-info("2005.12.25", "ケンプター・パストラールミサ",
+                  "jpg/pastral.jpg",
+                  "Kyrie2.wav",
+                  "キリエ", "グロリア", "クレド", "サンクトゥス", "ベネディクトゥス",
+                  "アニュスデイ", "ベツレヘムへ行こう", "サイレントナイト")
+
+      +sound-info("2004.4.15", "御復活祭2006",
+                  "jpg/fukkatusai.jpg",
+                  "SantaMaria2.wav",
+                  "よろこび歌え", "キリエ", "グロリア", "きょうこそ神が造られた日", "アレルヤ",
+                  "アヴェ・ヴェルム・コルプス(モーツァルト)",
+                  "サンクトゥス アニュスディ さかえのみ神を(シューベルト)",
+                  "サンタマリア・マテルディ み母マリアさま(モーツァルト)")
+
+      +sound-info("2006.11.23", "第2回谷山宗教音楽祭",
+                  "jpg/2ongakusai.jpg",
+                  "hallelujah2.wav",
+                  "サンクタ マリア マテル デイ (モーツアルト)",
+                  "カンターテ ドミノ (ミヒャエル・ハイドン)",
+                  "「クリスマス オラトリオ」より (J.S.バッハ)",
+                  "オラトリオ「エリア」より (メンデルスゾーン)",
+                  "エクスルターテ ジュビラーテ (モーツアルト)",
+                  "タントム エルゴ(モーツアルト)",
+                  "アヴェ ヴェルム コルプス (モーツアルト)",
+                  "ラウダーテ ドミヌム (モーツアルト)")
+
+
+  hr
+  footer(align="center")
+    a(href="index.html") 聖アルフォンソ・ファミリー
