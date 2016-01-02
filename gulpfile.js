@@ -11,7 +11,8 @@ gulp.task('less', function (){
                .pipe(less({
                     paths: [ path.join(__dirname, 'less', 'includes') ]
                }))
-               .pipe(gulp.dest('./public/css'));
+               .pipe(gulp.dest('./public/css'))
+               .pipe(browserSync.stream());
 });
 
 //gulp.task('browser-sync', function(){
@@ -27,19 +28,21 @@ gulp.task('serve', function(){
 });
 
 gulp.task('jade', function(){
-    gulp.src('./src/*.jade')
+    return gulp.src('./src/*.jade')
         .pipe(jade({
             pretty: true
         }))
-        .pipe(gulp.dest('public'));
+        .pipe(gulp.dest('public'))
+        .pipe(browserSync.stream());
 });
 
-gulp.task('watch', function(){
-    gulp.watch('./src/*.jade', ['jade']);
-    gulp.watch('./src/*.less', ['less']);
-});
+//gulp.task('watch', function(){
+//    gulp.watch('./src/*.jade', ['jade']);
+//    gulp.watch('./src/*.less', ['less']);
+//});
 
-gulp.task('default', ['jade', 'less', 'watch', 'serve']);
+//gulp.task('default', ['jade', 'less', 'watch', 'serve']);
+gulp.task('default', ['jade', 'less', 'serve']);
 //gulp.task('default', function(){
 //    console.log('default gulp task ...');
 //});
